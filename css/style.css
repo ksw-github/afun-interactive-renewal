@@ -1,1 +1,33 @@
 @import url(common.css);
+
+/* 스크롤바 커스텀 */
+body::-webkit-scrollbar {
+  width: 8px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #F33776; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 1);  /*스크롤바 뒷 배경 색상*/
+}
+
+/* 메인비디오 */
+.mainVideo h2 {
+}
+.mainVideo .video {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.mainVideo .video video {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}

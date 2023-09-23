@@ -5,55 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에이펀인터렉티브</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- lite youtube embed css -->
+    <!-- <link rel="stylesheet" href="css/lite-yt-embed.css">
+    <script src="js/lite-yt-embed.js"></script> -->
 </head>
 <body>
-    <header>
-        <h1>에이펀인터렉티브</h1>
-        <nav>
-            <ul>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">business area</a></li>
-                <li><a href="#">our works</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">career</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </nav>
-        <select name="language" id="">
-            <option value="ko">ko</option>
-            <option value="en">en</option>
-        </select>
-    </header>
+  <header>
+    <h1><a href="index.html" title="에이펀인터렉티브 로고">에이펀인터렉티브</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">about us</a>
+        </li>
+        <li>
+          <a href="index.html">business area</a>
+        </li>
+        <li>
+          <a href="index.html">our works</a>
+        </li>
+        <li>
+          <a href="index.html">news</a>
+        </li>
+        <li>
+          <a href="index.html">career</a>
+        </li>
+        <li>
+          <a href="index.html">contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="language">
+      <select name="language" id="language">
+        <option value="ko">ko</option>
+        <option value="en">en</option>
+      </select>
+    </div>
+  </header>
 
-    <main>
-        <section>
-            <h2>main video</h2>
-        </section>
-        <section>
-            <h2>real time 3d graphics</h2>
-        </section>
-        <section>
-            <h2>our works</h2>
-            <ul>
-                <li>digital celebrity 'apoki'</li>
-                <li>buddy VR</li>
-                <li>kia stinger interactive VR</li>
-            </ul>
-        </section>
-        <section>
-            <h2>news and contact us</h2>
-            <h3>news</h3>
-            <h3>contact us</h3>
-        </section>
-        <section>
-            <h2>site map</h2>
-        </section>
-    </main>
+  <main>
+    <section class="mainVideo">
+      <h2 class="hidden">main video</h2>
+      <!-- <iframe src="https://www.youtube.com/embed/uC6_xOLmuYs?autoplay=1&mute=1&loop=1&controls=0" title="APOKI(아뽀키)의 “GET IT OUT” Band Live Ver.│이렇게 춤 잘 추는 토끼 보신 분? 버추얼 스타 아뽀키의 밴드라이브 [it’s KPOP LIVE 잇츠라이브]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      <!-- <lite-youtube videoid="BaxJiDwupQk" style="background-image: url('https://www.youtube.com/embed/gnNhtDAyEXM/hqdefault.jpg');">
+        <button type="button" class="lty-playbtn">
+          <span class="lyt-visually-hidden">Play Video: Keynote (Google I/O '18)</span>
+        </button>
+      </lite-youtube> -->
+      <div class="video">
+        <video src="video/Apoki 아뽀키 - 'Coming Back' M_V.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </section>
+    <section>
+      <h2>real time 3d graphics</h2>
+    </section>
+    <section>
+      <h2>our works</h2>
+      <ul>
+        <li>digital celebrity 'apoki'</li>
+        <li>buddy VR</li>
+        <li>kia stinger interactive VR</li>
+      </ul>
+    </section>
+    <section>
+      <h2>news and contact us</h2>
+      <h3>news</h3>
+      <h3>contact us</h3>
+    </section>
+    <section>
+      <h2>site map</h2>
+    </section>
+  </main>
 
-    <footer>
-        <h2>에이펀인터렉티브</h2>
-        <address></address>
-        <a href="#" title="go to sns"></a>
-    </footer>
+  <footer>
+    <h2>에이펀인터렉티브</h2>
+    <address></address>
+    <a href="#" title="go to sns"></a>
+  </footer>
 </body>
 </html>
