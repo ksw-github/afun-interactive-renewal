@@ -13,6 +13,10 @@ body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 1);  /*스크롤바 뒷 배경 색상*/
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 메인비디오 */
 .mainVideo h2 {
 }
@@ -30,4 +34,21 @@ body::-webkit-scrollbar-track {
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
+}
+
+.business {
+  background: #F33776;
+}
+.business .container .business_img {
+  display: flex;
+}
+
+.parallaxParent {
+  height: 100vh;
+  overflow: hidden;
+}
+.parallaxParent > * {
+  height: 200%;
+  position: relative;
+  top: -100%;
 }
