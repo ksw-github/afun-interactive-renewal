@@ -1,3 +1,4 @@
+// 스크롤매직
 var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
 // build scenes
@@ -17,8 +18,14 @@ new ScrollMagic.Scene({triggerElement: "#parallax3"})
 .addTo(controller);
 
 // 스무스 스크롤바
-// var Scrollbar = window.Scrollbar;
-// Scrollbar.initAll();
-
 // import Scrollbar from 'smooth-scrollbar';
-// Scrollbar.init(document.querySelector('#my-scrollbar'), options);
+var Scrollbar = window.Scrollbar;
+
+const options = {
+  'damping' : 0.1,
+  'alwaysShowTracks' : true,
+  // 'wheelEventTarget' : 
+};
+
+Scrollbar.init(document.querySelector("#inner-scrollbar"), options);
+Scrollbar.initAll();

@@ -43,6 +43,7 @@ html {
   display: flex;
 }
 
+/* 스크롤매직 */
 .parallaxParent {
   height: 100vh;
   overflow: hidden;

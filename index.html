@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>에이펀인터렉티브</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>에이펀인터렉티브</title>
+  <link rel="stylesheet" href="css/style.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+  <!-- 스크롤 매직 -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
 
-    <script src="js/smooth-scrollbar.js"></script>
+  <!-- 스무스 스크롤 -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css"> -->
+  <!-- <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script> -->
+  <script src="js/smooth-scrollbar.js"></script>
 
-    <script defer src="js/main.js"></script>
-  </head>
+  <script defer src="js/main.js"></script>
+</head>
 <body>
+
   <header>
     <h1><a href="index.html" title="에이펀인터렉티브 로고">에이펀인터렉티브</a></h1>
     <nav>
@@ -48,7 +53,7 @@
     </div>
   </header>
 
-  <main id="inner-scrollbar" data-scrollbar style="width: auto; height: 100%; overflow: auto;">
+  <main id="inner-scrollbar" data-scrollbar style="width: auto; height: 100vh; overflow: auto;">
     <section class="mainVideo">
       <h2 class="hidden">main video</h2>
       <div class="video">
@@ -74,14 +79,13 @@
           <li>kia stinger interactive VR</li>
         </ul>
       </div>
+      <!-- 스크롤매직 -->
       <div class="spacer s0"></div>
       <div id="parallax1" class="parallaxParent">
         <div style="background-image: url(img/example_parallax_bg1.png)"></div>
       </div>
       <div class="spacer s1">
         <div class="box2 blue">
-          <p>Content 1</p>
-          <a href="#" class="viewsource">view source</a>
         </div>
       </div>
       <div class="spacer s0"></div>
@@ -90,8 +94,6 @@
       </div>
       <div class="spacer s1">
         <div class="box2 blue">
-          <p>Content 2</p>
-          <a href="#" class="viewsource">view source</a>
         </div>
       </div>
       <div class="spacer s0"></div>
@@ -99,6 +101,7 @@
         <div style="background-image: url(img/example_parallax_bg3.png);"></div>
       </div>
       <div class="spacer s2"></div>
+      <!-- 스크롤매직 끝 -->
     </section>
     <section>
       <h2>news and contact us</h2>
@@ -128,15 +131,15 @@
     </div>
   </scrollbar> -->
 
-  <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css">
 <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
 <div id="inner-scrollbar" data-scrollbar style="width: auto; height: 500px; overflow: auto;">
                     <img src="http://idiotwu.github.io/smooth-scrollbar/images/your_diary.jpg" height="auto" width="100%">
-                </div>
+                </div> -->
 
   <script> 
-  var Scrollbar = window.Scrollbar;
-  Scrollbar.initAll();
+  // var Scrollbar = window.Scrollbar;
+  // Scrollbar.initAll();
   </script>
 </body>
 </html>
